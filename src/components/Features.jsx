@@ -48,7 +48,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="maxWidthForSections py-12 ">
+    <div id="features" className="maxWidthForSections py-16 ">
       <h1 className="section-header text-white">Inspired to</h1>
       <h1 className="section-header text-lime">Inspire Your Best Self</h1>
       <p className="text-sm text-text-white/80 font-light text-center tracking-wider mt-1">

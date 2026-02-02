@@ -9,35 +9,34 @@ import { BsFillStopwatchFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="h-screen ">
+    <div id="hero" className="min-h-screen ">
       <div className="maxWidthForSections h-full relative overflow-hidden  text-text-white pt-14">
         <h1 className="hero-header mt-6">
-          Sculpt <span className="text-text-dark">your</span> body
+          Sculpt <span className="text-lime">your</span> body
         </h1>
         <h1 className="hero-header">
-          Elevate <span className="text-text-dark">your</span> Spirit
+          Elevate <span className="text-lime">your</span> Spirit
         </h1>
-        <img
-          src={heroPic}
-          alt="Company Logo"
-          className="absolute top-36 left-1/2 -translate-x-1/2  h-[87%] z-10"
-        />
-        <div className="relative  h-full">
-          <span className="size-[40vw] -top-5 bg-[radial-gradient(circle,#5D7110_0%,#ffffff00_70%)]  left-1/2 -translate-x-1/2   absolute rounded-full"/>
+       
+        <div className="relative h-full mt-8 sm:mt-4">
 
-          <AvatarStack pos={"absolute left-[5%] top-[55%]"} />
-          <button className="absolute btn btn-primary right-[5%] top-[55%]">
+          {/* --------------------blob------------ */}
+          <span className="size-[40vmax] min-w-[370px] -z-5 top-0 bg-[radial-gradient(circle,#5D7110_0%,#ffffff00_70%)]  left-1/2 -translate-x-1/2   absolute rounded-full"/>
+
+          <AvatarStack pos={"absolute left-[5%] bottom-[5%]"} />
+          {/* <button className="absolute btn btn-primary right-[5%] bottom-[5%]">
             Start Now &gt;&gt;
-          </button>
-          <div className="[writing-mode:vertical-rl] [text-orientation:upright] font-semibold absolute left-[10%] top-[25%] -translate-y-1/2 uppercase   text-3xl text-text-white/80 font-zalando tracking-widest">
+          </button> */}
+
+          <div className="[writing-mode:vertical-rl] [text-orientation:upright] font-semibold absolute left-[5%] top-[50%] -translate-y-1/2 uppercase   text-4xl md:block hidden text-text-white/80 font-zalando tracking-widest">
             Begin
           </div>
-          <div className="[writing-mode:vertical-rl] [text-orientation:upright] font-semibold absolute right-[10%] top-[25%] -translate-y-1/2 uppercase   text-3xl text-text-white/80 font-zalando tracking-widest">
+          <div className="[writing-mode:vertical-rl] [text-orientation:upright] font-semibold absolute right-[5%] top-[50%] -translate-y-1/2 uppercase   text-4xl md:block hidden text-text-white/80 font-zalando tracking-widest">
             Journey
           </div>
 
           <StatPill
-            position={"absolute top-[5%] left-[25%] -rotate-45"}
+            position={"absolute sm:top-[20%] top-0 left-1/5 sm:left-[25%] -rotate-45"}
             icon={BsFillStopwatchFill}
 
             name={"Hours"}
@@ -45,7 +44,7 @@ const Hero = () => {
           />
 
           <StatPill
-            position={"absolute top-[5%] right-[25%] rotate-45"}
+            position={"absolute sm:top-[20%] top-0 right-1/5 sm:right-[25%] rotate-45"}
                         icon={FaPersonRunning}
 
             name={"Poses"}
@@ -53,19 +52,29 @@ const Hero = () => {
           />
 
           <StatPill
-            position={"absolute top-[42%] left-[22%] -rotate-45"}
+            position={"absolute bottom-[20%] left-[17%] -rotate-45"}
             icon={FaFireFlameCurved}
             name={"Kcal"}
             count={550}
           />
 
           <StatPill
-            position={"absolute top-[42%] right-[22%] rotate-45"}
+            position={"absolute bottom-[20%] right-[17%] rotate-45"}
             icon={BiDumbbell}
             name={"Sets"}
             count={5}
           />
-        </div>
+         <img
+          src={heroPic}
+          alt="Company Logo"
+          className="sm:max-w-[500px] max-w-[250px] mx-auto w-full "
+          />
+          </div>
+
+          <h1 className="font-zalando md:hidden text-center text-5xl mt-6">
+          Begin <span className="text-lime">your</span> Journey
+        </h1>
+       
       </div>
     </div>
   );

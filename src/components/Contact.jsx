@@ -13,18 +13,18 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-12  text-text-white maxWidthForSections">
+    <div id="contact" className="py-16  text-text-white maxWidthForSections">
       <div className="border border-lime shadow-md shadow-lime/40 rounded-2xl  bg-lime ">
         <div className="px-6 text-lg  relative py-8">
           <h1 className="text-blackbg font-semibold [word-spacing:8px] text-3xl text-center font-zalando">
             Connect Engage Transform
           </h1>
 
-          <p className="text-blackbg/90 sm:text-2xl text-lg text-center mt-4">
+          <p className="text-blackbg/90 sm:text-2xl text-lg text-center mt-2">
             Schedule a call or email us at
           </p>
 
-          <div className="mt-4 flex justify-center">
+          <div className="mt-2 flex justify-center">
             <div className="flex items-center border border-text-dark rounded-lg overflow-hidden bg-blackbg">
               <span className="px-4 py-2 text-text-white sm:text-base text-xs select-all">
                 {email}

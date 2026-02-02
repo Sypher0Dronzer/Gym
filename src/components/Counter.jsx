@@ -35,7 +35,7 @@ const CounterItem = ({ value, label, duration = 2000, currency = false }) => {
   }, [value, duration]);
 
   return (
-    <div ref={ref} className="text-center">
+    <div ref={ref} className="text-center ">
       <h2 className="text-3xl md:text-5xl font-bold text-lime">
         {currency ? currency + count : count}+
       </h2>
@@ -46,7 +46,7 @@ const CounterItem = ({ value, label, duration = 2000, currency = false }) => {
 
 const StatsCounter = () => {
   return (
-    <section className="w-full py-16 bg- text-violet-100">
+    <section className="w-full py-16 maxWidthForSections text-violet-100">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <CounterItem value={1250} label="Total Members" />

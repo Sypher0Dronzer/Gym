@@ -2,7 +2,7 @@ import React from "react";
 
 const AvatarStack = ({pos}) => {
   return (
-    <div className={`flex  flex-col ${pos}` }>
+    <div className={`flex sm:scale-100 scale-80  flex-col ${pos}` }>
 
    
 
