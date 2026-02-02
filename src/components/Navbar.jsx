@@ -26,7 +26,7 @@ const Navbar = () => {
 
         {/*  Nav Items  */}
         <div
-          className={`fixed z-12 left-0 right-0 bg-blackbg/20 iolet-200/80  backdrop-blur-lg h-screen w-full top-0 flex justify-end transition-transform duration-300 ${
+          className={`fixed z-12 left-0 right-0  h-screen w-full top-0 flex justify-end transition-transform duration-300 ${
             isNavOpen ? "translate-x-0" : "translate-x-full"
           }`}
           onClick={toggleNav}

@@ -61,3 +61,38 @@ html {
   border-radius: 100vw; /* Rounded corners for the thumb */
    /* Border around the thumb to match the track */
 }
+
+
+.nav-itemMobile {
+  transition: opacity 2s, transform 1.5s;
+  transition-delay: calc(0.1s * var(--i-nav));
+  opacity: 0;
+  transform: translateX(50px); /* Initial transform state */
+}
+
+.nav-itemMobile.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav-itemMobile.is-hidden {
+  transition: none; /* Disable transition for instant reset */
+  opacity: 0;
+  transform: translateX(50px);
+}
+.close-itemMobile {
+  transition: opacity 2s, transform 1.5s;
+  transition-delay: calc(0.1s * var(--i-nav));
+  opacity: 0;
+  transform: translateY(-50px); /* Initial transform state */
+}
+
+.close-itemMobile.icon-is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.close-itemMobile.icon-is-hidden {
+  transition: none; /* Disable transition for instant reset */
+  opacity: 0;
+  transform: translateY(-50px);
+}
