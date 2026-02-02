@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+
+
+@import "tailwindcss";
+
+
+@theme{
+  --color-blackbg:#0A0A0A;
+  --color-offblack:#0F1304;
+  --color-lime:#B1D332;
+  --color-olive:#5D7110;
+  --color-text-white:#FBFEE4;
+  --color-text-dark:#747B53;
+  --font-zalando: "Zalando Sans Expanded", sans-serif; 
+  
+
+}
+
+@layer utilities {
+  .maxWidthForSections {
+    @apply lg:max-w-5xl mx-auto xl:px-0 px-[3vw] sm:px-[5vw];
+  }
+  .hero-header{
+    @apply text-7xl text-center capitalize font-semibold tracking-wider leading-22 font-zalando
+  }
+  .section-header{
+    @apply text-5xl text-center capitalize font-semibold  leading-16 font-zalando
+  }
+  .btn{
+    @apply font-semibold cursor-pointer shadow-sm rounded-2xl min-w-[120px] py-1 px-3;
+  }
+  .btn-primary{
+    @apply bg-linear-to-t from-olive to-lime text-blackbg shadow-olive;
+  }
+  .btn-outline{
+    @apply bg-transparent text-lime shadow-olive ;
+  }
+  .stack-avatar{
+    @apply size-9 rounded-full ring-1 ring-white
+  }
+
+}
+
+
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+  padding: 0;
+  background: #0A0A0A; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B1D332; /* Color of the scrollbar thumb */
+  border-radius: 100vw; /* Rounded corners for the thumb */
+   /* Border around the thumb to match the track */
+}
