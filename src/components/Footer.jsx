@@ -32,7 +32,7 @@ const Footer = () => {
     <div className="bg-offblack py-16">
       <div className="maxWidthForSections grid sm:grid-cols-3 gap-6">
         <div className="text-text-white ">
-          <a href="#home" className="flex justify-center w-full items-center gap-1">
+          <a href="#home" className="flex sm:justify-start justify-center w-full items-center gap-1">
                     <img src={logo} alt="LOGO" width={170} height={60} />
                   </a>
           <p className="capitalize mt-4 text-center sm:text-left">
